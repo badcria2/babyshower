@@ -92,9 +92,9 @@ function init() {
 
   for (var x = 0; x < addresses.length; x++) {
     $.getJSON(
-      "https://maps.googleapis.com/maps/api/geocode/json?address=" +
+      "http://maps.google.com/maps/api/js?sensor=false&address=" +
         addresses[x] +
-        "&sensor=false&KEY=AIzaSyAON1JYfTgh7_ja3mcAxYCQTL6y66NjHsA",
+        "&KEY=AIzaSyAON1JYfTgh7_ja3mcAxYCQTL6y66NjHsA",
       null,
       function (data) {
         var p = data.results[0].geometry.location;
